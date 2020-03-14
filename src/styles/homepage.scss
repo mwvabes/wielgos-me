@@ -1,0 +1,67 @@
+$bodyBgColor: #1b1b1b;
+$bodyColor: #FFF;
+
+$maxCardWidth: 860px;
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:500,900&display=swap');
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: $bodyBgColor;
+  color: $bodyColor;
+  font-family: 'Inconsolata', monospace;
+  color: #1b1b1b;
+}
+
+.welcomeWrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomeCard {
+  width: $maxCardWidth;
+  min-height: 50%;
+  background-color: #e0e0e0;
+  border: 1px solid #1b1b1b;
+  padding: 20px;
+}
+
+.cardMenu, .cardMenu > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardMenu li {
+  padding: 10px;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeaderMsg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: ($maxCardWidth + 10px)) {
+  
+  .welcomeCard {
+    max-width: 100%;
+    margin: 15px;
+  }
+
+}

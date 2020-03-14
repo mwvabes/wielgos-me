@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:500,900&display=swap");
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: #1b1b1b;
+  color: #FFF;
+  font-family: 'Inconsolata', monospace;
+  color: #1b1b1b;
+}
+
+.welcomeWrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcomeCard {
+  width: 860px;
+  min-height: 50%;
+  background-color: #e0e0e0;
+  border: 1px solid #1b1b1b;
+  padding: 20px;
+}
+
+.cardMenu, .cardMenu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cardMenu li {
+  padding: 10px;
+}
+
+.cardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardHeaderMsg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 870px) {
+  .welcomeCard {
+    max-width: 100%;
+    margin: 15px;
+  }
+}
+/*# sourceMappingURL=homepage.css.map */

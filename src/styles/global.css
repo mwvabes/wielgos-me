@@ -2,6 +2,32 @@ body {
   padding-bottom: 40px;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  color: #1824ce;
+  -webkit-transition: color 175ms ease-in-out;
+  transition: color 175ms ease-in-out;
+}
+
+a:hover {
+  color: #333253;
+}
+
 .textAlignLeft {
   text-align: left;
 }
@@ -12,6 +38,10 @@ body {
 
 .textAlignRight {
   text-align: right;
+}
+
+.container {
+  width: 860px;
 }
 
 .footer {

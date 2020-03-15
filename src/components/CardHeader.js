@@ -11,13 +11,13 @@ const CardHeader = () => (
   <>
     <div className="cardHeader">
       <div className="cardHeaderMsg">
-        <h1>Cześć!</h1>
+        <h1>Hello!</h1>
       </div>
       <div className="cardMenu">
         <ul>
-          <li>O mnje</li>
-          <li>Projekty</li>
-          <li>Kontakt</li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><span>Contact</span></li>
         </ul>
       </div>
     </div>

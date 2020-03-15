@@ -1,7 +1,27 @@
 $footerBgColor: #FFF;
 
+$orange: #1824ce;
+
+$maxWidth: 860px;
+
 body {
   padding-bottom: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: $orange;
+  transition: color 175ms ease-in-out;
+}
+
+a:hover {
+  color: #333253;
 }
 
 .textAlignLeft {
@@ -14,6 +34,10 @@ body {
 
 .textAlignRight {
   text-align: right;
+}
+
+.container {
+  width: $maxWidth;
 }
 
 .footer {

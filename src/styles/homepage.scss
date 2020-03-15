@@ -1,9 +1,15 @@
-$bodyBgColor: #1b1b1b;
-$bodyColor: #FFF;
+$bodyBgColor: #ffffff;
+$bodyColor: #575757;
 
 $maxCardWidth: 860px;
+$shadow: 0 3px 6px rgba(0,0,0,.1),0 0 3px rgba(0,0,0,.1);
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:500,900&display=swap');
+$orange: #1824ce;
+
+$aColor: #eee;
+$aHoverColor: #7db5ff;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Serif+Pro:700&display=swap');
 
 :root {
   font-size: 16px;
@@ -12,8 +18,7 @@ $maxCardWidth: 860px;
 body {
   background-color: $bodyBgColor;
   color: $bodyColor;
-  font-family: 'Inconsolata', monospace;
-  color: #1b1b1b;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .welcomeWrapper {
@@ -26,12 +31,25 @@ body {
   justify-content: center;
 }
 
-.welcomeCard {
+.welcomeGradientWrapper {
   width: $maxCardWidth;
   min-height: 50%;
-  background-color: #e0e0e0;
-  border: 1px solid #1b1b1b;
-  padding: 20px;
+  background-color: #FFF;
+  box-shadow: $shadow;
+  padding: 7px;
+  background-color: #1824ce;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #0c00b6 100%);
+  border-radius: 2px;
+}
+
+.welcomeCard {
+  background-color: $bodyBgColor;
+  padding: 15px;
+}
+
+.welcomeUnderCard {
+  padding: 10px;
 }
 
 .cardMenu, .cardMenu > ul {
@@ -40,7 +58,25 @@ body {
 }
 
 .cardMenu li {
-  padding: 10px;
+  margin: 2px;
+}
+
+.cardMenu > ul > li > * {
+  color: $orange;
+  transition: color 175ms ease-in-out, background-color 175ms ease-in-out;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  padding: 7px;
+}
+
+.cardMenu > ul > li > *:hover {
+  color: #333253;
+  background-color: rgba(0, 11, 105, 0.05);
+}
+
+.cardMenu > ul > li svg, .cardMenu > ul > li path {
+  height: 1rem;
 }
 
 .cardHeader {
@@ -48,13 +84,48 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cardHeader::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  bottom: -5px;
 }
 
 .cardHeaderMsg {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Serif Pro', serif;
   font-weight: bold;
-  font-size: 1.4rem;
-  letter-spacing: 4px;
+}
+
+.cardHeaderMsg h1 {
+  font-size: 2.2rem;
+}
+
+.projectsSummary {
+  padding: 10px;
+}
+
+.projectsSummary h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.projectWrapper {
+  margin: 10px 0px;
+}
+
+.projectContainer {
+  box-shadow: $shadow;
+  padding: 10px;
+}
+
+.contactName {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: ($maxCardWidth + 10px)) {

@@ -7,14 +7,23 @@ import SEO from "./seo"
 
 import "./../styles/homepage.css"
 import CardHeader from "./CardHeader"
+import ContactCard from "./ContactCard"
 
 const WelcomeCard = () => (
   <>
     <div className="welcomeWrapper">
-      <div className="welcomeCard">
-        <CardHeader />
-        <h1>Hello!</h1>
+      <div className="welcomeGradientWrapper">
+        <div className="welcomeCard">
+          <CardHeader />
+          <ContactCard />
+
+          <p>wielgos.me</p>
+
+        </div>
       </div>
+      <div className="welcomeUnderCard">
+          <p><a href="#projects">~ Check my projects ~</a></p>
+        </div>
     </div>
   </>
 )

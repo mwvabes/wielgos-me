@@ -12,7 +12,7 @@ const ProjectsSummary = () => (
   <>
     <div className="projectsSummary container">
       <h2>Projekty</h2>
-      <Project name="Abc" />
+      <Project name="Kalkulator wskaźnika rekrutacyjnego" demoLink="https://kalkulator.wielgos.me" />
     </div>
   </>
 )

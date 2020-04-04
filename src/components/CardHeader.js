@@ -15,9 +15,10 @@ const CardHeader = () => (
       </div>
       <div className="cardMenu">
         <ul>
-          <li><a href="#">About me</a></li>
+          {/* <li><a href="#">About me</a></li>
           <li><a href="#">Projects</a></li>
-          <li><span>Contact</span></li>
+          <li><span>Contact</span></li> */}
+          <li><a href="kalkulator.wielgos.me">Kalkulator rekrutacyjny PRz</a></li>
         </ul>
       </div>
     </div>

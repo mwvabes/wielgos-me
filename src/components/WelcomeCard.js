@@ -22,7 +22,7 @@ const WelcomeCard = () => (
         </div>
       </div>
       <div className="welcomeUnderCard">
-          <p><a href="#projects">~ Check my projects ~</a></p>
+          {/* <p><a href="#projects">~ Check my projects ~</a></p> */}
         </div>
     </div>
   </>

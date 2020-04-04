@@ -13,6 +13,7 @@ class Project extends React.Component {
       <div className="projectWrapper">
         <div className="projectContainer">
           <h3>{this.props.name}</h3>
+          <a href={this.props.demoLink}>{this.props.demoLink}</a>
         </div>
         
       </div>

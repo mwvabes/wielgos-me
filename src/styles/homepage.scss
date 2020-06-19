@@ -107,7 +107,7 @@ body {
 }
 
 .projectsSummary {
-  padding: 10px;
+  padding: 5px;
 }
 
 .projectsSummary h2 {
@@ -132,7 +132,18 @@ body {
   
   .welcomeCard {
     max-width: 100%;
-    margin: 15px;
+  }
+
+  .welcomeGradientWrapper {
+    width: 100%;
+  }
+
+  .welcomeWrapper {
+    min-height: unset;
+  }
+
+  main {
+    margin-top: 80px;
   }
 
 }

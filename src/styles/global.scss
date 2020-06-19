@@ -2,6 +2,7 @@ $footerBgColor: #FFF;
 
 $orange: #1824ce;
 
+$maxCardWidth: 860px;
 $maxWidth: 860px;
 
 body {
@@ -52,4 +53,12 @@ a:hover {
   align-items: center;
   padding: 5px 15px;
   background-color: $footerBgColor;
+}
+
+@media screen and (max-width: ($maxCardWidth + 10px)) {
+  
+  .container {
+    width: calc(100% - 10px);
+  }
+
 }

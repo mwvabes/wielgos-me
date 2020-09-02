@@ -1,12 +1,10 @@
-$bodyBgColor: #ffffff;
-$bodyColor: #575757;
+$bodyBgColor: #0c2233;
+$bodyColor: #0a91ab;
 
 $maxCardWidth: 860px;
 $shadow: 0 3px 6px rgba(0,0,0,.1),0 0 3px rgba(0,0,0,.1);
 
-$orange: #1824ce;
-
-$aColor: #eee;
+$aColor: #a2d5f2;
 $aHoverColor: #7db5ff;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Serif+Pro:700&display=swap');
@@ -24,7 +22,6 @@ body {
 .welcomeWrapper {
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +41,8 @@ body {
 }
 
 .welcomeCard {
-  background-color: $bodyBgColor;
+  background-color:#0e2f47;
+  color: #FFF;
   padding: 15px;
 }
 
@@ -62,18 +60,10 @@ body {
 }
 
 .cardMenu > ul > li > * {
-  color: $orange;
-  transition: color 175ms ease-in-out, background-color 175ms ease-in-out;
-  cursor: pointer;
-  text-decoration: underline;
   font-size: 1rem;
   padding: 7px;
 }
 
-.cardMenu > ul > li > *:hover {
-  color: #333253;
-  background-color: rgba(0, 11, 105, 0.05);
-}
 
 .cardMenu > ul > li svg, .cardMenu > ul > li path {
   height: 1rem;

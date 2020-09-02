@@ -1,6 +1,7 @@
-$footerBgColor: #FFF;
+$footerBgColor: #00416d;
 
-$orange: #1824ce;
+$aColor: #a2d5f2;
+$aColorHover: #cfe9f8;
 
 $maxCardWidth: 860px;
 $maxWidth: 860px;
@@ -17,12 +18,12 @@ main {
 }
 
 a {
-  color: $orange;
+  color: $aColor;
   transition: color 175ms ease-in-out;
 }
 
 a:hover {
-  color: #333253;
+  color: $aColorHover;
 }
 
 .textAlignLeft {

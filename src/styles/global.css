@@ -19,13 +19,13 @@ main {
 }
 
 a {
-  color: #1824ce;
+  color: #a2d5f2;
   -webkit-transition: color 175ms ease-in-out;
   transition: color 175ms ease-in-out;
 }
 
 a:hover {
-  color: #333253;
+  color: #cfe9f8;
 }
 
 .textAlignLeft {
@@ -64,7 +64,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px 15px;
-  background-color: #FFF;
+  background-color: #00416d;
 }
 
 @media screen and (max-width: 870px) {
